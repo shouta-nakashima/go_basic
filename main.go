@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"go_basic/calculator"
-	"os"
-
 	"github.com/joho/godotenv"
+	"go_basic/calculator"
+	"go_basic/variables"
+	"os"
 )
 
 func main() {
@@ -19,4 +19,6 @@ func main() {
 	fmt.Println(calculator.Offset)
 	fmt.Println(calculator.Sum(1, 2))
 	fmt.Println(calculator.Multiply(1, 2))
+	fmt.Println(variables.Hello("John"))
+	fmt.Println(variables.GetOsName(variables.Windows))
 }
