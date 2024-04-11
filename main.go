@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/joho/godotenv"
 	"go_basic/calculator"
+	"go_basic/pointer"
 	"go_basic/variables"
 	"os"
 )
@@ -21,4 +22,11 @@ func main() {
 	fmt.Println(calculator.Multiply(1, 2))
 	fmt.Println(variables.Hello("John"))
 	fmt.Println(variables.GetOsName(variables.Windows))
+	pointer.DefaultUis()
+	pointer.P1WithUi1()
+	pointer.SizeOfP1()
+	pointer.DoublePointer()
+	pointer.DereferencePointer()
+	pointer.ChangeValueUi1(10)
+	pointer.ShadowingSample()
 }
